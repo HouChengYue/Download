@@ -158,6 +158,8 @@ class DownLoadActivity : AppCompatActivity() {
     }
 
     fun toServer() {
+        times=0
+        getSharedPreferences(TAG, MODE_PRIVATE).edit().putInt(_times, times).apply()
         startService(Intent(this, DownloadService::class.java))
     }
 
