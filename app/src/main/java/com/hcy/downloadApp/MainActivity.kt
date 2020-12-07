@@ -1,7 +1,9 @@
-package com.hcy.download
+package com.hcy.downloadApp
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.hcy.download.DownLoadActivity
 
 /**
  * function: 用于下载文件使用的
@@ -13,5 +15,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        startActivity(Intent(this, DownLoadActivity::class.java))
     }
 }

@@ -1,0 +1,8 @@
+<resources>
+    <string name="dialog_title">温馨提示</string>
+    <string name="dialog_msg">读写权限用于文件下载,检查更新等作用,若您不授予文件读写权限,将不能享受相关服务!</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_msg2">若不授权,无法进行文件下载,检查更新等服务!</string>
+    <string name="toAuthorize">去授权</string>
+</resources>

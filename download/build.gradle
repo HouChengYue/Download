@@ -43,6 +43,7 @@ dependencies {
     implementation 'com.arialyy.aria:ftpComponent:3.8.15'
     implementation 'com.arialyy.aria:sftpComponent:3.8.15'
     implementation 'com.arialyy.aria:m3u8Component:3.8.15'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     kapt 'com.arialyy.aria:compiler:3.8.15'
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

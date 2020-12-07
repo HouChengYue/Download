@@ -1,10 +1,12 @@
 package com.hcy.download
 
+import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
 import android.app.Service
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.IBinder
+import androidx.core.content.ContextCompat
 import com.arialyy.aria.core.Aria
-import java.util.jar.Manifest
 
 /**
  * function: 下载服务
@@ -26,10 +28,9 @@ class DownloadService : Service() {
         super.onCreate()
         Aria.download(this)
             .register()
-        val checkCallingPermission =
-            checkCallingPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        if (ContextCompat.checkSelfPermission(this, WRITE_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED){
 
-
+        }
 
     }
 
